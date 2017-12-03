@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>calendar.js</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	body{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	#wrap{
+	}
+	#header{
+		width: 100%;
+	}
+	#header p{
+		text-align: center;
+		padding: 60px 0;
+		font-size: 50px;
+		font-weight: bold;
+		color: #fff;
+		background-color: #f66;
+	}
+	#contents{
+		margin-top: 40px;
+		overflow: hidden;
+	}
+	#main{
+		width: 650px;
+		background-color: #73ff73;
+		float: left;
+	}
+	#main p{
+		text-align: center;
+		font-size: 50px;
+		font-weight: bold;
+		color: #fff;
+		padding: 250px 0;
+	}
+	#side{
+		width: 300px;
+		float: right;
+		height: 575px;
+		border: 1px solid #5757ff;
+	}
+	#footer{
+		margin-top: 40px;
+		background-color: #313131;
+	}
+	#footer p{
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		padding: 50px;
+		font-size: 50px;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="calendar_js/calendar.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="calendar_js/calendar.js"></script>
+<script>
+	$(function(){
+		$('#calendar01').calendar();
+	});
+</script>
+</head>
+<body>
+	<div id="header">
+		<p>HEADER</p>
+	</div>
+	<div id="contents">
+		<div id="main">
+			<p>MAIN</p>
+		</div>
+		<div id="side">
+			<div id="calendar01"></div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>FOOTER</p>
+	</div>
+</body>
+</html>

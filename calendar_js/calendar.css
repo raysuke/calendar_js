@@ -1,0 +1,93 @@
+@charset 'UTF-8';
+.js-calendar {
+    background-color: #fff;
+}
+.js-calendarHead {
+    display: table;
+    width: 100%;
+    background-color: #d8e4f2;
+    padding: 0 5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.js-calendarPrev {
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 24px;
+    color: #0a4b9b;
+    cursor: pointer;
+}
+.js-calendarCurrent {
+    font-size: 18px;
+    display: table-cell;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: default;
+    /* width: 40%; */
+}
+.js-calendarPrevInner {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+.js-calendarNext {
+    display: table-cell;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 24px;
+    color: #0a4b9b;
+    cursor: pointer;
+}
+.js-calendarNextInner {
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+.js-calendarTableRow {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 4px 0;
+}
+.js-calendarTableCell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+    border-right: 1px solid #ffffff;
+}
+.js-calendarTableCell.today {
+    border: 1px solid #0a4b9b !important;
+}
+.js-calendarTableCell.sunday {
+    color: #e60012;
+}
+.js-calendarTableCell.saturday {
+    color: #00a0e9;
+}
+.js-calendarTable .js-calendarTableRow .js-calendarTableCell:last-of-type {
+    border-right: none;
+}
+.js-calendarTableCell.lastMonth {
+    visibility: hidden;
+}
+.js-calendarTable .js-calendarTableRow:not(:first-child) .js-calendarTableCell {
+    cursor: pointer;
+}
+.js-calendarTableCell.disabled {
+    background-color: #efefef;
+    cursor: default !important;
+}
+.js-calendarTableCell.notCurrent {
+    color: #bfbfbf;
+}
+.js-calendarTableCell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+    border-right: 1px solid #ffffff;
+}
